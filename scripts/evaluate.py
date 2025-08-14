@@ -13,6 +13,5 @@ def main():
     results[0].show()
 
 if __name__ == '__main__':
-    # This is essential for Windows multiprocessing
     multiprocessing.freeze_support()
     main()
