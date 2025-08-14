@@ -96,7 +96,7 @@ The main detection system is implemented in the `PPEDetector` class with the fol
 
 ## Evaluation
 The model is evaluated using the `evaluate.py` script, which computes:
-![Alt text](runs/detect/ppe_detection/results.png)
+![Alt text](assets/results.png)
 
 >The YOLOv8 model trained on the custom Roboflow dataset for PPE detection demonstrates strong and consistent learning performance.
 
