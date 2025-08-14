@@ -1,8 +1,0 @@
-data/test/
-data/train/
-data/valid/
-runs/
-venv/
-yolo11n.pt
-.gitignore
-ppe_webcamlog.py
