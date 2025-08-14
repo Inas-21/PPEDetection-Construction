@@ -1,5 +1,7 @@
 # Real-Time PPE Detection System using YOLOv8
-![Alt text](assets/worker.png)
+<div align="center">
+  <img src="assets/worker.png" alt="Worker with PPE" width="200" height="200">
+</div>
 
 > Construction remains one of the most hazardous industries worldwide. In the U.S., the construction sector accounts for about 20% of all worker fatalities despite comprising only around 6% of the workforce. The most lethal risks—dubbed OSHA’s "Fatal Four"—include falls, struck-by incidents, electrocutions, and caught-in/between accidents, collectively responsible for roughly 60–65% of construction deaths.
 

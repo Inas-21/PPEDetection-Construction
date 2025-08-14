@@ -3,12 +3,12 @@ from ultralytics import YOLO
 import time
 
 class PPEDetector:
-    def __init__(self, model_path="runs/detect/ppe_detection/weights/best.pt"):
+    def __init__(self, model_path="models/best.pt"):
         """Initialize the PPE detector with your trained model"""
         self.model = YOLO(model_path)
         self.class_names = self.model.names
         
-        # Define colors for each class (BGR format)
+        # Define colors for each class 
         self.colors = {
             'helmet': (0, 255, 0),      
             'no-helmet': (0, 0, 255),   
@@ -146,7 +146,7 @@ class PPEDetector:
                 cv2.imwrite(filename, frame)
                 print(f"Screenshot saved as {filename}")
         
-        # Cleanup
+        
         cap.release()
         cv2.destroyAllWindows()
         print("PPE Detection stopped")
@@ -157,7 +157,7 @@ def main():
     detector = PPEDetector("runs/detect/ppe_detection/weights/best.pt")
     
     # Run webcam detection
-    detector.run_webcam_detection(camera_index=0)  # Use 0 for default camera
+    detector.run_webcam_detection(camera_index=0)  
 
 if __name__ == "__main__":
     main()

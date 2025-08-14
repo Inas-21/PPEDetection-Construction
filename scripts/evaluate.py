@@ -3,7 +3,7 @@ import multiprocessing
 
 def main():
     # Load the best model
-    model = YOLO("runs/detect/ppe_detection/weights/best.pt")
+    model = YOLO("models/best.pt")
     
     # Run validation
     metrics = model.val()
